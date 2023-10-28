@@ -1,10 +1,10 @@
 import requests
 
-INFLUX_URL="http://192.168.0.40:9330/api/v2/write?org=8b158fa2ed34133c&bucket=test0"
-INFLUX_AUTH="n8tSCT8bQclvPKgSU1c4UGEAd7mJFt-DAu45A6KaDGV69277LPJVc1WQssKubADJX6p3quj0VYAk-wc5ed0VYg=="
+INFLUX_URL="http://YOUR_INFLUX_URL"
+INFLUX_AUTH="YOUR_KEY"
 
 
-# , 'Content-Type': 'text/plain'
+# 'Content-Type': 'text/plain'
 
 head = {'Authorization': 'Token {}'.format(INFLUX_AUTH)}
 
