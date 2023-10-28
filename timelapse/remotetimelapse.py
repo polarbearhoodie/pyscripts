@@ -3,12 +3,12 @@ import requests
 from timeit import default_timer as timer
 
 from requests.auth import HTTPBasicAuth
-wyze = HTTPBasicAuth('rainbow', 'beauty')
+wyze = HTTPBasicAuth('USER', 'PASSWORD')
 
 
 while True:
     start = timer()
-    image = requests.get("http://192.168.0.221/cgi-bin/jpeg.cgi", auth=wyze)
+    image = requests.get("http://YOUR_URL_HERE", auth=wyze)
 
     if image.status_code == 200:
         t = time.localtime()
